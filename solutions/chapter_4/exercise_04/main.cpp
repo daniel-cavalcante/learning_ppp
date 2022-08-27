@@ -1,5 +1,6 @@
 #include "../../../std_lib_facilities.h"
 
+// round double to int
 int rounder(double d)
 {
 	int k {0};
@@ -21,7 +22,6 @@ int main()
 	cout << "Enter 'y' for yes and 'n' for no for the questions below.\n";
 
 	while (keep_on_guessing) {
-		
 		cout << "Is the number you are thinking lesser than or equals to ";
 		cout << rounder((d0 + d1) / 2.0) << "?\n";
 		cin >> answer;
@@ -39,7 +39,7 @@ int main()
 			keep_on_guessing = false;
 	}
 
-	cout << "It took me only " << guess_number << " to correctly guess the number you were thinking.\n";
+	cout << "It took me only " << guess_number << "steps to correctly guess the number you were thinking.\n";
 	cout << "It is " << d1 << ", am I right ? Thanks for playing.";
 	return 0;
 }

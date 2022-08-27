@@ -1,4 +1,8 @@
-# gVim files
+# Compiler
+*.exe
+*.obj
+
+# gVim
 *~
 
 # others
